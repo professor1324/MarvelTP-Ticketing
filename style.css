@@ -1,0 +1,546 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  :root {
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .TopPanel header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 0.5fr);
+  }
+
+  .TopPanel header h1{
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+    padding-left: 30%;
+    background-color: #DC143C;
+  }
+
+  .TopPanel header p:nth-of-type(1){
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .TopPanel header p:nth-of-type(1) span{
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .TopPanel header p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 18px;
+    margin: auto;
+  }
+
+  .TopPanel header p:nth-of-type(3){
+    font-weight: bold;
+    font-size: 12px;
+    color: #676767;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  
+  .TicketOptionsBox {
+    display: grid;
+    height: 100vr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 3fr 0.4fr;
+    grid-template-areas: 
+      '. DayPassBox FamilyBundleBox AnnualPassBox .'
+      '. . comparePasses . .';
+    grid-gap: 60px;
+    justify-content: center;
+    margin-left: 24%;
+    margin-right: 24%;
+  }
+
+  .ticketIMG{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .comparePasses{
+    text-align: center;
+    grid-area: comparePasses;
+    margin-left: 70px;
+    width: 220px;
+    border-radius: 18px;
+    border-width: 1px;
+    color: white;
+    border-color: #122e44;
+    background-color: #122e44;
+    font-weight: bold;
+  }
+
+  .comparePasses:hover{
+    background-color: aliceblue;
+    border-color: aliceblue;
+    color: #122e44;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .DayPassBox{
+    grid-area: DayPassBox;
+  }
+
+  .FamilyBundleBox{
+    grid-area: FamilyBundleBox;
+
+  }
+  
+  .AnnualPassBox{
+    grid-area: AnnualPassBox;
+
+  }
+
+  .BOX{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 20px;
+    max-width: 350px;
+  }
+
+  .DayPass{
+    position: relative;
+    color: white;
+  }
+
+  .DayPass > a{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .DayPass > p:nth-of-type(1){
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-size: 18px;
+  }
+
+  .DayPass > p:nth-of-type(1) span{
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .DayPass > p:nth-of-type(2){
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    right: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.7;
+    ;
+  }
+
+  .DayPass .TK1H{
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 18;
+    top: 250px;
+    left: 18%;
+    font-weight: bold;
+  }
+
+  .TK1H:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  .FamilyBundle{
+    position: relative;
+    color: white;
+  }
+
+  .FamilyBundle > a{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .FamilyBundle > p:nth-of-type(1){
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-size: 18px;
+  }
+
+  .FamilyBundle > p:nth-of-type(1) span{
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .FamilyBundle > p:nth-of-type(2){
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    right: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.7;
+    ;
+  }
+
+  .FamilyBundle .TK1H{
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 18;
+    top: 250px;
+    left: 18%;
+    font-weight: bold;
+  }
+
+  .AnnualPass{
+    position: relative;
+    color: white;
+  }
+
+  .AnnualPass > a{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .AnnualPass > p:nth-of-type(1){
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-size: 18px;
+  }
+
+  .AnnualPass > p:nth-of-type(1) span{
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .AnnualPass > p:nth-of-type(2){
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    right: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.7;
+    ;
+  }
+
+  .AnnualPass .TK1H{
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 18;
+    top: 250px;
+    left: 18%;
+    font-weight: bold;
+  }
+
+  .AnnualPass .VIPbox{
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+
+  .VIPlogo{
+    margin-top: 15px;
+  }
+
+  .VIPE{
+    margin-left: 10px;
+  }
+
+  .FamilyBundleBox .PKbox{
+    display: flex;
+    position: absolute;
+    top: 63px;
+    left: 60px;
+  }
+
+  .PKlogo{
+    margin-top: 10px;
+  }
+
+  .RPK{
+    margin-left: 5px;
+  }
+
+  .card-footer ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: .01em;
+    font-style: inherit;
+    vertical-align: baseline;
+    /* margin-top: 1px; */
+    display: flex;
+    /* box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; */
+}
+
+  .card-footer ul li::before{
+    content: url("/PG3_IMG/REScmgreen.png");
+    margin-right: 10px;
+
+ }
+
+ .card-footer ul li.feature-disabled::before{
+    content: url("/PG3_IMG/REScmred.png");
+ }
+
+ .TandC{
+    font-size: 12px;
+    text-align: center;
+ }
+
+ .Events .EventsTop{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding-left: 30%;
+    background-color: #afaaab;
+ }
+
+ #OurEvents{
+  display: grid;
+  justify-content: center;
+  column-gap: 40px;
+ }
+
+ #OurEvents > h3{
+  grid-column: 2/4;
+  grid-row: 1;
+  text-align: center;
+ }
+
+ .Event1{
+  grid-column: 2/3;
+  grid-row: 2;
+
+  position: relative;
+ }
+
+ .Event1:hover{
+  transform: scale(1.015);
+  transition: 0.4s;
+  opacity: 0.7;
+  cursor: pointer;
+ }
+
+ .Event1 > img{
+  border-radius: 18px;
+  object-fit: cover;
+ }
+
+ .Event1 > p:nth-of-type(1){
+  color: white;
+  position: absolute;
+  bottom: 42px;
+  left: 16px;
+  opacity: 0.9;
+  font-weight: bold;
+  font-size: 16px;
+ }
+
+ .Event1 > p:nth-of-type(2){
+  color: white;
+  position: absolute;
+  bottom: 6px;
+  left: 16px;
+  opacity: 0.9;
+  font-size: 18px;
+ }
+
+ .Event1:hover > p:nth-of-type(2){
+  text-decoration: underline;
+ }
+
+ .Event1T{
+  grid-column: 3/4;
+  grid-row: 2;
+
+  padding-top: 40px;
+  font-size: 30px;
+  text-align: center;
+ }
+
+ .Event2{
+  grid-column: 3/4;
+  grid-row: 3;
+
+  position: relative;
+ }
+
+ .Event2:hover{
+  transform: scale(1.015);
+  transition: 0.4s;
+  opacity: 0.7;
+  cursor: pointer;
+ }
+
+ .Event2 > img{
+  border-radius: 18px;
+  object-fit: cover;
+ }
+
+ .Event2 > p:nth-of-type(1){
+  color: white;
+  position: absolute;
+  bottom: 42px;
+  left: 16px;
+  opacity: 0.9;
+  font-weight: bold;
+  font-size: 16px;
+ }
+
+ .Event2 > p:nth-of-type(2){
+  color: white;
+  position: absolute;
+  bottom: 6px;
+  left: 16px;
+  opacity: 0.9;
+  font-size: 18px;
+ }
+
+ .Event2:hover > p:nth-of-type(2){
+  text-decoration: underline;
+ }
+
+ .Event2T{
+  grid-column: 2/3;
+  grid-row: 3;
+
+  padding-top: 40px;
+  font-size: 30px;
+  text-align: center;
+ }
+
+ .Event3{
+  grid-column: 2/3;
+  grid-row: 4;
+
+  position: relative;
+ }
+
+ .Event3:hover{
+  transform: scale(1.015);
+  transition: 0.4s;
+  opacity: 0.7;
+  cursor: pointer;
+ }
+
+ .Event3 > img{
+  border-radius: 18px;
+  object-fit: cover;
+ }
+
+ .Event3 > p:nth-of-type(1){
+  color: white;
+  position: absolute;
+  bottom: 42px;
+  left: 16px;
+  opacity: 0.9;
+  font-weight: bold;
+  font-size: 16px;
+ }
+
+ .Event3 > p:nth-of-type(2){
+  color: white;
+  position: absolute;
+  bottom: 6px;
+  left: 16px;
+  opacity: 0.9;
+  font-size: 18px;
+ }
+
+ .Event3:hover > p:nth-of-type(2){
+  text-decoration: underline;
+ }
+
+ .Event3T{
+  grid-column: 3/4;
+  grid-row: 4;
+
+  padding-top: 40px;
+  font-size: 30px;
+  text-align: center;
+ }
+
+ .AllEvents{
+  grid-column: 2/4;
+  grid-row: 5;
+
+  text-align: center;
+  font-size: 14px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 220px;
+  height: 45px;
+  border-radius: 18px;
+  border-width: 1px;
+  color: white;
+  border-color: #122e44;
+  background-color: #122e44;
+  font-weight: bold;
+ }
+
+ .AllEvents:hover{
+  background-color: aliceblue;
+  border-color: aliceblue;
+  color: #122e44;
+  font-weight: bold;
+  cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+  
+  
